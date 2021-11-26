@@ -3,7 +3,7 @@
 ---
 
 In Dungeons and Dragons, "Keen Mind" is an ability that bestows your character with a nearly flawless memory. The _Keen Mind Notepad_ hopes to do the same!  
-Designed for rapid-fire notetaking in the heat of battle, and for ease of categorization and reference.
+Designed for rapid-fire notetaking in both the heat of battle and tedious boardroom meetings, and for ease of categorization and reference.
 
 ## Features
 
