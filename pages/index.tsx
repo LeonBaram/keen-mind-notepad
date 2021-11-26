@@ -7,10 +7,11 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Keen Mind Notepad</title>
         <meta name="description" content="Keen Mind Notepad" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <input type="text" name="user-input" id="user-input" />
     </div>
   )
 }
