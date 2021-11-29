@@ -4,6 +4,7 @@ import { getDatabase } from "firebase/database";
 const firebaseConfig: FirebaseOptions = {
   apiKey: "AIzaSyDh0nWiL4ykMvqBPaL2VggdD9SVBMhgPno",
   authDomain: "keen-mind-notepad.firebaseapp.com",
+  databaseURL: "https://keen-mind-notepad.firebaseio.com",
   projectId: "keen-mind-notepad",
   storageBucket: "keen-mind-notepad.appspot.com",
   messagingSenderId: "540770074337",
