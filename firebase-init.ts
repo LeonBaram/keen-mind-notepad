@@ -20,4 +20,8 @@ const dbref: {
   [path: string]: DatabaseReference;
 } = { root: ref(db) };
 
+for (const path of dbPaths) {
+  dbref[path] = ref(db, path);
+}
+
 export { dbref };
