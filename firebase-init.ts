@@ -1,5 +1,5 @@
-import { FirebaseOptions, initializeApp } from "firebase/app";
-import { getDatabase } from "firebase/database";
+import { FirebaseOptions, initializeApp } from "@firebase/app";
+import { getDatabase, DatabaseReference, ref } from "@firebase/database";
 
 const firebaseConfig: FirebaseOptions = {
   apiKey: "AIzaSyDh0nWiL4ykMvqBPaL2VggdD9SVBMhgPno",
@@ -14,4 +14,10 @@ const firebaseConfig: FirebaseOptions = {
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
-export { db };
+const dbPaths = ["Notes"];
+
+const dbref: {
+  [path: string]: DatabaseReference;
+} = { root: ref(db) };
+
+export { dbref };
