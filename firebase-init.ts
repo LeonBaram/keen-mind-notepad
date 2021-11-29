@@ -19,6 +19,16 @@ const dbPaths = ["Notes"];
 const dbref: {
   [path: string]: DatabaseReference;
 } = { root: ref(db) };
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
+
+const dbPaths = ["Notes"];
+
+const dbref: {
+  [path: string]: DatabaseReference;
+} = { root: ref(db) };
 
 for (const path of dbPaths) {
   dbref[path] = ref(db, path);
